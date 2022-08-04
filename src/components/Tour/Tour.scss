@@ -1,0 +1,63 @@
+@import "../../index.scss" ; 
+.tour{
+    margin :  0.5rem ;
+    max-width : 17rem ;
+    background :whitesmoke ;
+    border-radius : 0.5rem ;
+    img{
+        max-height : 14rem;
+        max-width : 17rem ;
+        border-top-left-radius : 0.5rem;
+        border-top-right-radius : 0.5rem ;
+    }   display : block ;
+    }
+.img-container{
+    position: relative ;
+}
+.close-btn{
+    position : absolute ;
+    display : block ;
+    top : 5% ;
+    right : 5% ;
+    height : 2rem ;
+    width : 2rem ;
+    background : white ;
+    border : none ;
+    color : #e73d48 ;
+    border-radius: 50%;
+    border : 2px solid #e73d48 ;
+    font-weight: bold;
+    opacity : 0
+}
+.close-btn:hover{
+    color: white;
+    background : #e73d48 ;
+    cursor: pointer;
+}
+.img-container:hover .close-btn{
+    opacity : 1 ;
+}
+.tour-info{
+    padding : 0.7rem ;
+
+    h3{
+       text-transform: uppercase;
+       color : $primaryColor ;
+    }
+    h4{
+        text-transform: capitalize;
+        margin : 0.1rem 0 0.6rem 0 ;
+    }
+    h5{
+        text-transform: capitalize;
+
+        span{
+            margin-left : 0.2rem ;
+            color : $primaryColor ;
+            cursor: pointer;
+        }
+    }
+    p{
+        font-size : 0.9rem ;
+    }
+}
